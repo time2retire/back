@@ -2,5 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "t2r-db": {
+    "host": "",
+    "port": 0,
+    "url": "mongodb://nomadavid9:1Likeblink@ds121248.mlab.com:21248/time2retire",
+    "database": "",
+    "password": "",
+    "name": "t2r-db",
+    "user": "",
+    "connector": "mongodb"
   }
 }
