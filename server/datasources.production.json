@@ -5,6 +5,6 @@
   },
   "mlab": {
     "connector": "loopback-connector-mongodb",
-    "url": "mongodb://dev:dev@ds217360.mlab.com:17360/time2retire"
+    "url": "mongodb://galentro451:galentro451@ds119650.mlab.com:19650/time2retire-backend"
   }
 }
