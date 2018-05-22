@@ -13,8 +13,8 @@
     "lastName": {
       "type": "string"
     },
-    "age": {
-      "type": "number",
+    "birthday": {
+      "type": "any",
       "required": true
     },
     "email": {
@@ -28,6 +28,13 @@
   },
   "validations": [],
   "relations": {},
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }
