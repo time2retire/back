@@ -6,7 +6,7 @@
   "mlab": {
     "host": "mlab.com",
     "port": 57599,
-    "url": "mongodb://dev:dev@ds217360.mlab.com:17360/time2retire",
+    "url": "process.env.DATABASE_URL",
     "database": "time2retire",
     "password": "dev",
     "name": "mlab",
