@@ -2,9 +2,5 @@
   "db": {
     "name": "db",
     "connector": "memory"
-  },
-  "mlab": {
-    "connector": "loopback-connector-mongodb",
-    "url": ""
   }
 }
