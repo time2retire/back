@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function(app) {
   // Install a "/ping" route that returns "pong"
   app.get('/benefitprofile', (req, res, next) => {
@@ -59,7 +61,7 @@ module.exports = function(app) {
     }
 
     startAge.forEach((age, i) => {
-      benObj[age] = monthlyBen[i];
+      benObj[age] = {monthlyBen: monthlyBen[i]};
     });
     // console.log(statement);
     // console.log(benObj);
