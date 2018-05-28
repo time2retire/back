@@ -6,7 +6,17 @@ var boot = require('loopback-boot');
 var app = module.exports = loopback();
 
 app.get('/benefitprofile', (req, res, next) => {
-  res.send('<p>Hello World</p>');
+  res.json({
+    '62': {'monthlyBen': '1000'},
+    '63': {'monthlyBen': '1100'},
+    '64': {'monthlyBen': '1200'},
+    '65': {'monthlyBen': '1300'},
+    '66': {'monthlyBen': '1400'},
+    '67': {'monthlyBen': '1500'},
+    '68': {'monthlyBen': '1600'},
+    '69': {'monthlyBen': '1700'},
+    '70': {'monthlyBen': '1800'},
+  });
 });
 
 app.start = function() {
