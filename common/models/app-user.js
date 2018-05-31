@@ -5,7 +5,7 @@ module.exports = function (Appuser) {
     Appuser.afterRemote('login', async (ctx, user, next) => {
         if (user) {
             user.token = user.id;
-            Appuser.sendEmail();
+            //Appuser.sendEmail();
         }
     });
     Appuser.observe('after save', function (ctx, next) {
@@ -24,17 +24,17 @@ module.exports = function (Appuser) {
         }
     });
     // send an email
-    Appuser.sendEmail = function (cb) {
-        Appuser.app.models.Email.send({
-            to: 'gcpbxtll26u4z4yk@ethereal.email',
-            from: 'you@gmail.com',
-            subject: 'my subject',
-            text: 'my text',
-            html: 'my <em>html</em>'
-        }, function (err, mail) {
-            console.log('email sent!');
-            cb(err);
-        });
-    }
+    // Appuser.sendEmail = function (cb) {
+    //     Appuser.app.models.Email.send({
+    //         to: 'gcpbxtll26u4z4yk@ethereal.email',
+    //         from: 'you@gmail.com',
+    //         subject: 'my subject',
+    //         text: 'my text',
+    //         html: 'my <em>html</em>'
+    //     }, function (err, cb) {
+    //         console.log('email sent!');
+    //         cb(err);
+    //     });
+    // }
 
 };
