@@ -36,7 +36,15 @@
     "public": false
   },
   "appUser": {
-    "dataSource": "mlab",
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Email": {
+    "dataSource": "emailDataSource",
+    "public": true
+  },
+  "profileReport": {
+    "dataSource": "mongo",
     "public": true
   }
 }
