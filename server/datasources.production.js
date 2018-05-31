@@ -1,6 +1,8 @@
+'use strict';
+
 module.exports = {
-  mlab: {
+  mongo: {
     connector: 'mongodb',
     url: process.env.DATABASE_PRODUCTION_URL,
-  }
+  },
 };
