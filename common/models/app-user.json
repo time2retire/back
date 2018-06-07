@@ -15,7 +15,7 @@
       "required": true
     },
     "birthday": {
-      "type": "any",
+      "type": "date",
       "required": true
     },
     "email": {
@@ -28,7 +28,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "charts": {
+      "type": "hasMany",
+      "model": "charts",
+      "foreignKey": ""
+    }
+  },
   "acls": [
     {
       "accessType": "*",

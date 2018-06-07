@@ -1,0 +1,30 @@
+{
+  "name": "charts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "monthlyBen": {
+      "type": "number",
+      "required": true
+    },
+    "retYear": {
+      "type": "number"
+    },
+    "bucketYear": {
+      "type": "number"
+    },
+    "totalBen": {
+      "type": "number"
+    },
+    "timestamp": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

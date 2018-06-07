@@ -5,7 +5,7 @@ module.exports = function (Appuser) {
     Appuser.afterRemote('login', async (ctx, user, next) => {
         if (user) {
             user.token = user.id;
-            // Appuser.sendEmail();
+            //Appuser.sendEmail();
         }
     });
     Appuser.observe('after save', function (ctx, next) {
@@ -31,7 +31,7 @@ module.exports = function (Appuser) {
     //         subject: 'my subject',
     //         text: 'my text',
     //         html: 'my <em>html</em>'
-    //     }, function (err, mail) {
+    //     }, function (err, cb) {
     //         console.log('email sent!');
     //         cb(err);
     //     });
