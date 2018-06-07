@@ -1,0 +1,57 @@
+{
+  "name": "profileReport",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "lastEmailSent": {
+      "type": "date"
+    },
+    "userID": {
+      "type": "number",
+      "required": true
+    },
+    "profileID": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "sendProfile": {
+      "accepts": [
+        {
+          "arg": "profileID",
+          "type": "number",
+          "required": true,
+          "description": "user's profile ID"
+        },
+        {
+          "arg": "userID",
+          "type": "number",
+          "required": true,
+          "description": "user's ID"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "confirmation",
+          "type": "object",
+          "root": false,
+          "description": "confirmation sent email"
+        }
+      ],
+      "description": "send user a profile",
+      "http": [
+        {
+          "path": "/sendProfile",
+          "verb": "post"
+        }
+      ]
+    }
+  }
+}
